@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/base.css">
+    <link rel="stylesheet" href="./static/css/contact.css">
+    <script src="./nav.js"></script>
+    <title>Contact me!</title>
+</head>
+<body>
+    <nav></nav>
+    <div class="container">
+        <div class="form-card">
+            <div class="title">Contact Me!</div>
+            <form action="/">
+                <fieldset>
+                    <label for="first_name">First Name</label><br>
+                    <input type="text"
+                    name="first_name"
+                    id="first_name"
+                    placeholder="John"><br>
+                    <label for="last_name">Last Name</label><br>
+                    <input type="text"
+                    name="last_name"
+                    id="last_name"
+                    placeholder="Doe"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email"
+                    required
+                    name="email"
+                    id="email"
+                    placeholder="john.doe@email.com"><br>
+                    <label for="message">Message</label><br>
+                    <textarea name="message"
+                    id="message"
+                    rows="10"
+                    placeholder="OMG, you're so amazing."></textarea><br>
+                    <button type="submit">Send it!</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

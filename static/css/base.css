@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Limelight&family=Oswald:wght@200..700&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    font-family: Radio Canada Big;
+}
+
+body{
+    margin: 0px
+}
+
+.navbar{
+
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+
+}
+
+
+.main-bar{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+}
+
+.brand{
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    transition: color ease-in-out .3s
+}
+
+.brand:hover{
+    color:lightblue;
+}
+
+.menu-item{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: larger;
+    padding-right: 20px;
+    transition: color ease-in-out .3s;
+}
+
+.menu-item:hover{
+    color: salmon;
+}
+
+.spacer{
+    height: 100px;
+}
