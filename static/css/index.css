@@ -1,8 +1,9 @@
 
 .links{
-    border: solid rgb(180, 173, 173) 2px;
+    border: solid rgb(180, 173, 173) 3px;
     border-left: none;
-    border-radius: 5px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
     z-index: 10;
     margin-top: 100px;
     position: fixed;
@@ -213,7 +214,7 @@
 .hobbies-text, .next-text{
     position: absolute;
     padding: 2em;
-    background-color: rgba(63, 85, 119, 0.26);
+    background-color: rgba(63, 85, 119, 0.43);
     height: calc(100% - 4em);
     width: calc(100% - 4em);
 }
