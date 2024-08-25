@@ -15,22 +15,28 @@ body{
 
 .nav-list{
     list-style: none;
+    text-indent: -.5em;
     display: flex;
-
+    flex-wrap: wrap;
 }
 
 
 .main-bar{
-    background-color: black;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    background-color: black;
     padding: 1em;
     position: fixed;
     width: 100vw;
     z-index: 100;
 }
 
+.brand-burger{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 .brand{
     font-size: 2em;
     color: white;
@@ -42,6 +48,30 @@ body{
     color:lightblue;
 }
 
+.burger{
+    display: flex;
+    width: 100px;
+    a{
+        font-size: 2em;
+    }
+}
+
+.close-menu{
+    width: 100px;
+    display: none;
+    font-size: 4em;
+    a{
+        color: white;
+        text-decoration:none;
+
+    }
+}
+
+#drop-menu{
+    display: none;
+    background-color: black;
+    justify-content: space-evenly;
+}
 .menu-item{
     color: white;
     text-decoration: none;
