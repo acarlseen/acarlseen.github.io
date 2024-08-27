@@ -8,7 +8,7 @@ addEventListener('DOMContentLoaded', () => {
             <div class="burger">\
                 <a href="javascript:void(0)" onClick="menuToggle()"><i class="fa-solid fa-bars" style="color: #fafafa;"></i></a>\
             </div>\
-            <div class="close-menu">\
+            <div class="close-menu off">\
                 <a href="javascript:void(0)" onClick="menuToggle()">&times;</a>\
             </div>\
         </div>\
@@ -27,17 +27,23 @@ addEventListener('DOMContentLoaded', () => {
 })
 
 function menuToggle(){
-    var x = document.getElementById('drop-menu')
-    var y = document.getElementsByClassName('burger')[0]
-    var z = document.getElementsByClassName('close-menu')[0]
-    if (x.style.display == 'flex'){
-        x.style.display = 'none';
-        y.style.display = 'flex'
-        z.style.display = 'none'
-    }
-    else {
-        x.style.display = 'flex';
-        y.style.display = 'none'
-        z.style.display = 'flex'
-    }
+    var dropMenu = document.getElementById('drop-menu')
+    var burger = document.getElementsByClassName('burger')[0]
+    var closeMenu = document.getElementsByClassName('close-menu')[0]
+    const dropMenu_class = dropMenu.classList;
+    const burger_class = burger.classList;
+    const closeMenu_class = closeMenu.classList;
+    dropMenu_class.toggle('open')
+    burger_class.toggle('off')
+    closeMenu_class.toggle('off')
+    // if (x.style.display == 'flex'){
+    //     x.style.display = 'none';
+    //     y.style.display = 'flex'
+    //     z.style.display = 'none'
+    // }
+    // else {
+    //     x.style.display = 'flex';
+    //     y.style.display = 'none'
+    //     z.style.display = 'flex'
+    // }
 }

@@ -29,6 +29,7 @@ body{
     position: fixed;
     width: 100vw;
     z-index: 100;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.145);
 }
 
 .brand-burger{
@@ -38,10 +39,13 @@ body{
     align-items: center;
 }
 .brand{
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
     text-decoration: none;
-    transition: color ease-in-out .3s
+    transition: color ease-in-out .3s;
+    @media only screen and (min-width: 1080px){
+        font-size: 2em;
+    }
 }
 
 .brand:hover{
@@ -56,10 +60,15 @@ body{
     }
 }
 
+.burger.off{
+    display:none;
+}
+
 .close-menu{
     width: 100px;
-    display: none;
+    display: flex;
     font-size: 4em;
+    transition: all .2s ease;
     a{
         color: white;
         text-decoration:none;
@@ -67,11 +76,28 @@ body{
     }
 }
 
-#drop-menu{
+.close-menu.off{
     display: none;
-    background-color: black;
-    justify-content: space-evenly;
 }
+
+#drop-menu{
+    display: flex;
+    overflow: hidden;
+    height: 0px;
+    background-color: black;
+    align-items: center;
+    transition: height .3s ease;
+    justify-content: space-evenly;
+    ul{
+        display: contents;
+    }
+}
+
+#drop-menu.open{
+    height: 40px;
+    background-color: black;
+}
+
 .menu-item{
     color: white;
     text-decoration: none;
@@ -86,5 +112,9 @@ body{
 }
 
 .spacer{
-    height: 100px;
+    height: .5em;
+    @media only screen and (min-width: 1080px){
+        height: 125px;
+    }
+
 }
